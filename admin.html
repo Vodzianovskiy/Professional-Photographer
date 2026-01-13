@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel - Demo Mode</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/admin/admin-layout.css" />
+    <link rel="stylesheet" href="css/admin/admin-components.css" />
+    <link rel="stylesheet" href="css/admin/admin-dashboard.css" />
+  </head>
+  <body>
+    <!-- Demo Mode Banner -->
+    <div class="demo-banner">
+      <div class="demo-content">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <circle cx="12" cy="12" r="10" />
+          <line x1="12" y1="8" x2="12" y2="12" />
+          <line x1="12" y1="16" x2="12.01" y2="16" />
+        </svg>
+        <span
+          >DEMO MODE - No Backend Connected. All changes are simulated and
+          stored in browser localStorage.</span
+        >
+      </div>
+    </div>
+
+    <div class="admin-layout">
+      <!-- Sidebar -->
+      <aside class="admin-sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-logo">
+            <span class="logo-icon">📸</span>
+            <div>
+              <div class="logo-title">Admin Panel</div>
+              <div class="logo-sub">Portfolio Control</div>
+            </div>
+          </div>
+          <span class="sidebar-badge">DEMO MODE</span>
+        </div>
+
+        <nav class="sidebar-menu">
+          <button class="sidebar-item active" data-action="show-dashboard">
+            <span class="sidebar-icon">🏠</span>
+            <span class="sidebar-text">Dashboard</span>
+          </button>
+          <button class="sidebar-item" data-action="manage-gallery">
+            <span class="sidebar-icon">🖼️</span>
+            <span class="sidebar-text">Gallery</span>
+          </button>
+          <button class="sidebar-item" data-action="manage-effects">
+            <span class="sidebar-icon">✨</span>
+            <span class="sidebar-text">Effects</span>
+          </button>
+          <button class="sidebar-item" data-action="edit-about">
+            <span class="sidebar-icon">👤</span>
+            <span class="sidebar-text">About Me</span>
+          </button>
+          <button class="sidebar-item" data-action="manage-settings">
+            <span class="sidebar-icon">⚙️</span>
+            <span class="sidebar-text">Settings</span>
+          </button>
+          <button class="sidebar-item" data-action="edit-content">
+            <span class="sidebar-icon">✏️</span>
+            <span class="sidebar-text">Content</span>
+          </button>
+        </nav>
+
+        <div class="sidebar-footer">
+          <button class="sidebar-item logout" data-action="logout-demo">
+            <span class="sidebar-icon">🚪</span>
+            <span class="sidebar-text">Logout (Demo)</span>
+          </button>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="admin-main">
+        <!-- Dashboard Section -->
+        <section id="dashboard" class="admin-section active">
+          <div class="section-header">
+            <h1>Dashboard</h1>
+            <p>Welcome to your portfolio admin panel</p>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div
+                class="stat-icon"
+                style="
+                  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                "
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                  <circle cx="8.5" cy="8.5" r="1.5" />
+                  <polyline points="21 15 16 10 5 21" />
+                </svg>
+              </div>
+              <div class="stat-info">
+                <h3 id="totalPhotos">18</h3>
+                <p>Total Photos</p>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div
+                class="stat-icon"
+                style="
+                  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+                "
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+              <div class="stat-info">
+                <h3>1,234</h3>
+                <p>Total Visitors</p>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div
+                class="stat-icon"
+                style="
+                  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+                "
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                  />
+                </svg>
+              </div>
+              <div class="stat-info">
+                <h3>42</h3>
+                <p>Contact Messages</p>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div
+                class="stat-icon"
+                style="
+                  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+                "
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                </svg>
+              </div>
+              <div class="stat-info">
+                <h3 id="currentEffect">Fade Scale</h3>
+                <p>Active Effect</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="quick-actions">
+            <h2>Quick Actions</h2>
+            <div class="action-buttons">
+              <button class="action-btn" data-action="manage-gallery">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="12" y1="8" x2="12" y2="16" />
+                  <line x1="8" y1="12" x2="16" y2="12" />
+                </svg>
+                Add New Photo
+              </button>
+              <button class="action-btn" data-action="edit-about">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="7" r="4" />
+                  <path d="M5.5 21a6.5 6.5 0 0 1 13 0" />
+                </svg>
+                Edit About Me
+              </button>
+              <button class="action-btn" data-action="manage-effects">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="3" />
+                  <path d="M12 1v6m0 6v6" />
+                </svg>
+                Change Gallery Effect
+              </button>
+              <button class="action-btn" data-action="manage-settings">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                  />
+                  <path
+                    d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
+                  />
+                </svg>
+                Edit Contact Info
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Gallery Manager Section -->
+        <section id="gallery" class="admin-section">
+          <div class="section-header">
+            <h1>Gallery Manager</h1>
+            <p>Upload and manage your portfolio photos</p>
+          </div>
+          <button
+            class="btn-secondary"
+            data-action="back-dashboard"
+            style="margin-bottom: 1rem"
+          >
+            ← Back to Dashboard
+          </button>
+
+          <div class="upload-card">
+            <h2>Upload New Photo</h2>
+            <div class="upload-area" id="uploadArea">
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="17 8 12 3 7 8" />
+                <line x1="12" y1="3" x2="12" y2="15" />
+              </svg>
+              <h3>Drag & Drop Photo Here</h3>
+              <p>or click to browse</p>
+              <input
+                type="file"
+                id="photoUpload"
+                accept="image/*"
+                style="display: none"
+              />
+            </div>
+
+            <form
+              id="photoDetailsForm"
+              class="photo-details"
+              style="display: none"
+            >
+              <div class="preview-container">
+                <img id="photoPreview" src="" alt="Preview" />
+              </div>
+              <div class="form-group">
+                <label for="photoTitle">Photo Title</label>
+                <input
+                  type="text"
+                  id="photoTitle"
+                  placeholder="e.g., Sunset Portrait"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="photoCategory">Category</label>
+                <select id="photoCategory" class="category-select" required>
+                  <option value="">All Categories</option>
+                  <option value="portrait">Portrait</option>
+                  <option value="wedding">Wedding</option>
+                  <option value="fashion">Fashion</option>
+                  <option value="landscape">Landscape</option>
+                  <option value="product">Product</option>
+                  <option value="event">Event</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn-primary">
+                  Add to Gallery
+                </button>
+                <button type="button" class="btn-secondary" id="cancelUpload">
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="gallery-manager">
+            <h2>Current Gallery <span id="galleryCount">(18 photos)</span></h2>
+            <div class="gallery-grid-admin" id="adminGalleryGrid">
+              <!-- Gallery items will be loaded here -->
+            </div>
+          </div>
+        </section>
+
+        <!-- Gallery Effects Section -->
+        <section id="effects" class="admin-section">
+          <div class="section-header">
+            <h1>Gallery Animation Effects</h1>
+            <p>Choose how your gallery photos appear when loading</p>
+          </div>
+          <button
+            class="btn-secondary"
+            data-action="back-dashboard"
+            style="margin-bottom: 1rem"
+          >
+            ← Back to Dashboard
+          </button>
+
+          <div class="effects-container">
+            <div class="effect-preview">
+              <div class="effect-preview-header">
+                <h2 id="effect-preview-title">Effect Preview</h2>
+                <p class="effect-preview-label">
+                  Hover or click a card to see the animation
+                </p>
+              </div>
+              <div class="preview-stage">
+                <img
+                  id="effect-preview-image"
+                  class="effect-demo"
+                  src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&h=600&fit=crop"
+                  alt="Effect preview"
+                />
+              </div>
+              <button class="replay-btn" id="replayEffect">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="1 4 1 10 7 10" />
+                  <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10" />
+                </svg>
+                Replay Animation
+              </button>
+            </div>
+
+            <div class="effect-selector effect-selector-container">
+              <h2>Available Effects (20)</h2>
+              <div class="form-group" style="margin-bottom: 1rem">
+                <label for="gallery-effect-selector">Select Effect</label>
+                <div class="effect-dropdown-wrapper">
+                  <select
+                    id="gallery-effect-selector"
+                    class="effect-dropdown"
+                  ></select>
+                </div>
+                <button
+                  type="button"
+                  class="btn-primary preview-button"
+                  id="preview-effect"
+                  style="margin-top: 0.75rem; width: 100%"
+                >
+                  Preview on site
+                </button>
+              </div>
+              <div id="effect-preview-board" class="effect-preview-board"></div>
+            </div>
+          </div>
+
+          <div class="save-notice">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="16" x2="12" y2="12" />
+              <line x1="12" y1="8" x2="12.01" y2="8" />
+            </svg>
+            <p>
+              Changes are automatically saved and will be visible on your
+              portfolio immediately.
+            </p>
+          </div>
+        </section>
+
+        <!-- Contact Settings Section -->
+        <section id="contact" class="admin-section">
+          <div class="section-header">
+            <h1>Contact Settings</h1>
+            <p>Manage your contact information and links</p>
+          </div>
+          <button
+            class="btn-secondary"
+            data-action="back-dashboard"
+            style="margin-bottom: 1rem"
+          >
+            ← Back to Dashboard
+          </button>
+
+          <form id="contactSettingsForm" class="settings-form">
+            <div class="settings-card">
+              <div class="card-header-row">
+                <h2>Direct Contact Links</h2>
+                <label class="toggle">
+                  <input type="checkbox" id="contactPreviewToggle" />
+                  <span class="toggle-label">Preview before publishing</span>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label for="whatsappNumber">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                    />
+                  </svg>
+                  WhatsApp Number
+                </label>
+                <input
+                  type="tel"
+                  id="whatsappNumber"
+                  placeholder="+1234567890"
+                  value="+1234567890"
+                />
+              </div>
+              <label class="toggle" style="margin-bottom: 0.5rem">
+                <input type="checkbox" id="whatsappVisible" checked />
+                <span class="toggle-label">Show on main site</span>
+              </label>
+              <div class="form-group">
+                <label for="whatsappMessage">WhatsApp Message</label>
+                <textarea
+                  id="whatsappMessage"
+                  rows="2"
+                  placeholder="Hello! I would like to inquire about your photography services."
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="telegramUsername">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
+                    />
+                  </svg>
+                  Telegram Username
+                </label>
+                <input
+                  type="text"
+                  id="telegramUsername"
+                  placeholder="@username"
+                  value="@username"
+                />
+              </div>
+              <label class="toggle" style="margin-bottom: 0.5rem">
+                <input type="checkbox" id="telegramVisible" checked />
+                <span class="toggle-label">Show on main site</span>
+              </label>
+              <div class="form-group">
+                <label for="telegramMessage">Telegram Message</label>
+                <textarea
+                  id="telegramMessage"
+                  rows="2"
+                  placeholder="Hello! I would like to inquire about your photography services."
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="emailAddress">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  id="emailAddress"
+                  placeholder="hello@example.com"
+                  value="hello@alexandramorgan.com"
+                />
+              </div>
+              <label class="toggle" style="margin-bottom: 0.5rem">
+                <input type="checkbox" id="emailVisible" checked />
+                <span class="toggle-label">Show on main site</span>
+              </label>
+            </div>
+
+            <div class="settings-card">
+              <h2>Social Media Links</h2>
+              <div
+                class="form-actions"
+                style="justify-content: flex-start; gap: 0.75rem; margin-top: 0"
+              >
+                <button type="button" class="btn-secondary" id="showAllSocial">
+                  Show All
+                </button>
+                <button type="button" class="btn-secondary" id="hideAllSocial">
+                  Hide All
+                </button>
+                <span
+                  id="socialVisibleCount"
+                  style="color: var(--text-secondary); font-weight: 500"
+                  >All visible</span
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="instagramUrl">Instagram URL</label>
+                <input
+                  type="url"
+                  id="instagramUrl"
+                  placeholder="https://instagram.com/username"
+                  value="https://instagram.com/alexandramorgan"
+                />
+                <label class="toggle" style="margin-top: 0.5rem">
+                  <input type="checkbox" id="instagramVisible" checked />
+                  <span class="toggle-label">Show on main site</span>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label for="facebookUrl">Facebook URL</label>
+                <input
+                  type="url"
+                  id="facebookUrl"
+                  placeholder="https://facebook.com/username"
+                  value="https://facebook.com/alexandramorgan"
+                />
+                <label class="toggle" style="margin-top: 0.5rem">
+                  <input type="checkbox" id="facebookVisible" checked />
+                  <span class="toggle-label">Show on main site</span>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label for="twitterUrl">Twitter/X URL</label>
+                <input
+                  type="url"
+                  id="twitterUrl"
+                  placeholder="https://twitter.com/username"
+                  value="https://twitter.com/alexandramorgan"
+                />
+                <label class="toggle" style="margin-top: 0.5rem">
+                  <input type="checkbox" id="twitterVisible" checked />
+                  <span class="toggle-label">Show on main site</span>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label for="pinterestUrl">Pinterest URL</label>
+                <input
+                  type="url"
+                  id="pinterestUrl"
+                  placeholder="https://pinterest.com/username"
+                  value="https://pinterest.com/alexandramorgan"
+                />
+                <label class="toggle" style="margin-top: 0.5rem">
+                  <input type="checkbox" id="pinterestVisible" checked />
+                  <span class="toggle-label">Show on main site</span>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label for="linkedinUrl">LinkedIn URL</label>
+                <input
+                  type="url"
+                  id="linkedinUrl"
+                  placeholder="https://linkedin.com/in/username"
+                  value="https://linkedin.com/in/alexandramorgan"
+                />
+                <label class="toggle" style="margin-top: 0.5rem">
+                  <input type="checkbox" id="linkedinVisible" checked />
+                  <span class="toggle-label">Show on main site</span>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label for="githubUrl">GitHub URL</label>
+                <input
+                  type="url"
+                  id="githubUrl"
+                  placeholder="https://github.com/username"
+                  value="https://github.com/alexandramorgan"
+                />
+                <label class="toggle" style="margin-top: 0.5rem">
+                  <input type="checkbox" id="githubVisible" checked />
+                  <span class="toggle-label">Show on main site</span>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label for="youtubeUrl">YouTube URL</label>
+                <input
+                  type="url"
+                  id="youtubeUrl"
+                  placeholder="https://youtube.com/@username"
+                  value="https://youtube.com/@alexandramorgan"
+                />
+                <label class="toggle" style="margin-top: 0.5rem">
+                  <input type="checkbox" id="youtubeVisible" checked />
+                  <span class="toggle-label">Show on main site</span>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label for="tiktokUrl">TikTok URL</label>
+                <input
+                  type="url"
+                  id="tiktokUrl"
+                  placeholder="https://tiktok.com/@username"
+                  value="https://tiktok.com/@alexandramorgan"
+                />
+                <label class="toggle" style="margin-top: 0.5rem">
+                  <input type="checkbox" id="tiktokVisible" checked />
+                  <span class="toggle-label">Show on main site</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="settings-card">
+              <h2>Custom Messages</h2>
+
+              <div class="form-group">
+                <label for="responseTime">Response Promise Message</label>
+                <input
+                  type="text"
+                  id="responseTime"
+                  placeholder="I'll respond within 24 hours"
+                  value="I'll respond within 24 hours"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="autoReply">Auto-Reply Message (Optional)</label>
+                <textarea
+                  id="autoReply"
+                  rows="4"
+                  placeholder="Thank you for reaching out! I've received your message and will get back to you soon."
+                >
+Thank you for reaching out! I've received your message and will get back to you soon.</textarea
+                >
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn-primary">Save Changes</button>
+              <button type="button" class="btn-secondary" id="resetContact">
+                Reset to Default
+              </button>
+            </div>
+          </form>
+
+          <div class="settings-card contact-preview-card">
+            <h2>Preview</h2>
+            <p>Toggle preview to review changes without publishing.</p>
+            <div id="contactPreviewBody"></div>
+          </div>
+        </section>
+
+        <!-- Content Editor Section -->
+        <section id="content" class="admin-section">
+          <div class="section-header">
+            <h1>Content Editor</h1>
+            <p>Control hero, navigation, and theme colors</p>
+          </div>
+          <button
+            class="btn-secondary"
+            data-action="back-dashboard"
+            style="margin-bottom: 1rem"
+          >
+            ← Back to Dashboard
+          </button>
+
+          <div class="settings-card">
+            <div class="card-header-row">
+              <h2>Hero Content</h2>
+              <p>Edit title, subtitle, and background image.</p>
+            </div>
+            <form id="heroContentForm" class="grid-2">
+              <div class="form-group">
+                <label for="heroLine1">Hero Line 1</label>
+                <input type="text" id="heroLine1" placeholder="Capturing" />
+              </div>
+              <div class="form-group">
+                <label for="heroLine2">Hero Line 2</label>
+                <input type="text" id="heroLine2" placeholder="Timeless" />
+              </div>
+              <div class="form-group">
+                <label for="heroLine3">Hero Line 3</label>
+                <input type="text" id="heroLine3" placeholder="Moments" />
+              </div>
+              <div class="form-group">
+                <label for="heroSubtitle">Subtitle</label>
+                <input
+                  type="text"
+                  id="heroSubtitle"
+                  placeholder="Professional Photography for Your Special Moments"
+                />
+              </div>
+              <div class="form-group">
+                <label for="heroBackground">Background Image URL</label>
+                <input
+                  type="url"
+                  id="heroBackground"
+                  placeholder="https://images.unsplash.com/..."
+                />
+              </div>
+              <div class="form-group">
+                <label for="heroOverlay">Overlay Opacity</label>
+                <input
+                  type="range"
+                  id="heroOverlay"
+                  min="0"
+                  max="1"
+                  step="0.05"
+                />
+              </div>
+              <div class="form-actions" style="grid-column: 1 / -1">
+                <button type="button" class="btn-secondary" id="previewHero">
+                  Preview
+                </button>
+                <button type="submit" class="btn-primary">Publish Hero</button>
+                <button type="button" class="btn-secondary" id="resetHero">
+                  Reset
+                </button>
+              </div>
+            </form>
+            <div class="hero-preview" id="heroPreview">
+              <h3 id="heroPreviewTitle"></h3>
+              <p id="heroPreviewSubtitle"></p>
+            </div>
+          </div>
+
+          <div class="settings-card">
+            <div class="card-header-row">
+              <h2>Navigation</h2>
+              <p>Update link labels and targets</p>
+            </div>
+            <form id="navForm">
+              <div class="form-group">
+                <label for="navBrand">Brand/Logo Text</label>
+                <input
+                  type="text"
+                  id="navBrand"
+                  placeholder="Alexandra Morgan"
+                />
+              </div>
+              <div class="nav-editor grid-2">
+                <div class="form-group" data-nav-item>
+                  <label>Link 1 Label</label>
+                  <input type="text" data-nav-label placeholder="Home" />
+                  <input type="text" data-nav-href placeholder="#hero" />
+                </div>
+                <div class="form-group" data-nav-item>
+                  <label>Link 2 Label</label>
+                  <input type="text" data-nav-label placeholder="About" />
+                  <input type="text" data-nav-href placeholder="#about" />
+                </div>
+                <div class="form-group" data-nav-item>
+                  <label>Link 3 Label</label>
+                  <input type="text" data-nav-label placeholder="Gallery" />
+                  <input type="text" data-nav-href placeholder="#gallery" />
+                </div>
+                <div class="form-group" data-nav-item>
+                  <label>Link 4 Label</label>
+                  <input type="text" data-nav-label placeholder="Pricing" />
+                  <input type="text" data-nav-href placeholder="#pricing" />
+                </div>
+                <div class="form-group" data-nav-item>
+                  <label>Link 5 Label</label>
+                  <input type="text" data-nav-label placeholder="Contact" />
+                  <input type="text" data-nav-href placeholder="#contact" />
+                </div>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn-primary">
+                  Publish Navigation
+                </button>
+                <button type="button" class="btn-secondary" id="resetNav">
+                  Reset
+                </button>
+              </div>
+            </form>
+            <div class="nav-preview">
+              <h4>Live Preview</h4>
+              <ul id="navPreviewList"></ul>
+            </div>
+          </div>
+
+          <div class="settings-card">
+            <div class="card-header-row">
+              <h2>Theme Colors</h2>
+              <p>Adjust primary, accent, and text colors</p>
+            </div>
+            <form id="themeForm" class="grid-2">
+              <div class="form-group">
+                <label for="themePrimary">Primary Color</label>
+                <input type="color" id="themePrimary" value="#d4af37" />
+              </div>
+              <div class="form-group">
+                <label for="themeSecondary">Secondary Color</label>
+                <input type="color" id="themeSecondary" value="#1a1a1a" />
+              </div>
+              <div class="form-group">
+                <label for="themeBackground">Background Color</label>
+                <input type="color" id="themeBackground" value="#0a0a0a" />
+              </div>
+              <div class="form-group">
+                <label for="themeTextPrimary">Primary Text</label>
+                <input type="color" id="themeTextPrimary" value="#ffffff" />
+              </div>
+              <div class="form-group">
+                <label for="themeTextSecondary">Secondary Text</label>
+                <input type="color" id="themeTextSecondary" value="#b0b0b0" />
+              </div>
+              <div class="form-group">
+                <label for="themeAccent">Accent Gradient</label>
+                <input
+                  type="text"
+                  id="themeAccent"
+                  placeholder="linear-gradient(135deg, #D4AF37 0%, #F4E4C1 100%)"
+                />
+              </div>
+              <div class="form-actions" style="grid-column: 1 / -1">
+                <button type="button" class="btn-secondary" id="previewTheme">
+                  Preview
+                </button>
+                <button type="submit" class="btn-primary">Publish Theme</button>
+                <button type="button" class="btn-secondary" id="resetTheme">
+                  Reset
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <!-- About Section Editor -->
+        <section id="about-section" class="admin-section">
+          <div class="section-header">
+            <h1>Edit About Me</h1>
+            <p>Manage profile photo, text, signature, and stats</p>
+          </div>
+          <button
+            class="btn-secondary"
+            data-action="back-dashboard"
+            style="margin-bottom: 1rem"
+          >
+            ← Back to Dashboard
+          </button>
+
+          <div class="settings-card about-editor">
+            <div class="editor-group">
+              <h3>Profile Photo</h3>
+              <div class="photo-upload-preview">
+                <img id="about-photo-preview" src="" alt="Profile" />
+                <input
+                  type="file"
+                  id="about-photo-upload"
+                  accept="image/*"
+                  style="display: none"
+                />
+                <label for="about-photo-upload" class="btn-secondary btn-upload"
+                  >📤 Change Photo</label
+                >
+              </div>
+            </div>
+
+            <div class="editor-group">
+              <label for="about-heading">Section Heading</label>
+              <input type="text" id="about-heading" placeholder="About Me" />
+            </div>
+
+            <div class="editor-group">
+              <label for="about-intro">Introduction</label>
+              <textarea
+                id="about-intro"
+                rows="3"
+                placeholder="Hello! I'm Alexandra..."
+              ></textarea>
+            </div>
+
+            <div class="editor-group">
+              <label for="about-desc1">Description Paragraph 1</label>
+              <textarea
+                id="about-desc1"
+                rows="4"
+                placeholder="My journey in photography..."
+              ></textarea>
+            </div>
+
+            <div class="editor-group">
+              <label for="about-desc2">Description Paragraph 2</label>
+              <textarea
+                id="about-desc2"
+                rows="4"
+                placeholder="I believe that..."
+              ></textarea>
+            </div>
+
+            <div class="editor-group">
+              <label for="about-signature">Signature</label>
+              <input type="text" id="about-signature" placeholder="DX" />
+            </div>
+
+            <div class="editor-group">
+              <h3>Statistics Cards</h3>
+              <div class="stat-editor">
+                <label>Card 1 - Clients</label>
+                <input type="text" id="stat1-number" placeholder="500+" />
+                <input
+                  type="text"
+                  id="stat1-label"
+                  placeholder="HAPPY CLIENTS"
+                />
+              </div>
+              <div class="stat-editor">
+                <label>Card 2 - Experience</label>
+                <input type="text" id="stat2-number" placeholder="10+" />
+                <input
+                  type="text"
+                  id="stat2-label"
+                  placeholder="YEARS EXPERIENCE"
+                />
+              </div>
+              <div class="stat-editor">
+                <label>Card 3 - Awards</label>
+                <input type="text" id="stat3-number" placeholder="50+" />
+                <input type="text" id="stat3-label" placeholder="AWARDS WON" />
+              </div>
+            </div>
+
+            <button class="btn-primary" id="save-about">
+              💾 Save All Changes
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="js/admin-main.js"></script>
+  </body>
+</html>

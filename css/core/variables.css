@@ -1,0 +1,27 @@
+:root {
+  /* Color Palette */
+  --primary-color: #d4af37;
+  --secondary-color: #1a1a1a;
+  --background-dark: #0a0a0a;
+  --background-light: #1a1a1a;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --accent-gradient: linear-gradient(135deg, #d4af37 0%, #f4e4c1 100%);
+  --glass-background: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+
+  /* Typography */
+  --font-primary: "Poppins", sans-serif;
+  --font-display: "Playfair Display", serif;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+
+  /* Transitions */
+  --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}

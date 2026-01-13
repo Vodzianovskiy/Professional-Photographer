@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Professional Photography Portfolio - Capturing moments that last forever"
+    />
+    <link rel="icon" href="/img/logo.jpg" />
+    <title>Alexandra Morgan | Professional Photographer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="logo">Alexandra Morgan</div>
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="admin.html" class="nav-link admin-link">Admin</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-background"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="hero-line">Capturing</span>
+          <span class="hero-line">Timeless</span>
+          <span class="hero-line">Moments</span>
+        </h1>
+        <p class="hero-subtitle">
+          Professional Photography for Your Special Moments
+        </p>
+      </div>
+      <div class="scroll-indicator">
+        <span class="scroll-text">Scroll to explore</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-image" data-animate="fade-up">
+            <div class="image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&h=800&fit=crop"
+                alt="Alexandra Morgan"
+                loading="lazy"
+              />
+              <div class="image-overlay"></div>
+            </div>
+          </div>
+          <div class="about-text" data-animate="fade-up">
+            <h2 class="section-title">About Me</h2>
+            <div class="title-underline"></div>
+            <p class="about-intro">
+              Hello! I'm Alexandra, a passionate photographer with over 10 years
+              of experience capturing life's most beautiful moments.
+            </p>
+            <p>
+              My journey in photography began with a simple camera and an eye
+              for beauty. Today, I specialize in portrait, wedding, and fashion
+              photography, bringing creativity and professionalism to every
+              shoot.
+            </p>
+            <p>
+              I believe that every photograph tells a story, and my goal is to
+              help you tell yours in the most authentic and beautiful way
+              possible.
+            </p>
+            <div class="signature">
+              <svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M 10 40 Q 25 10, 40 40 T 70 40"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-width="2"
+                />
+                <path
+                  d="M 80 25 L 80 45 M 80 25 Q 95 25, 95 35 Q 95 45, 80 45"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-width="2"
+                />
+                <path
+                  d="M 105 25 L 125 45 M 125 25 L 105 45"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Happy Clients</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Awards Won</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+      <div class="container">
+        <div class="gallery-header" data-animate="fade-up">
+          <h2 class="section-title">Portfolio</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">A collection of my finest work</p>
+        </div>
+
+        <div class="gallery-filters" data-animate="fade-up">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="portrait">Portrait</button>
+          <button class="filter-btn" data-filter="wedding">Wedding</button>
+          <button class="filter-btn" data-filter="fashion">Fashion</button>
+          <button class="filter-btn" data-filter="nature">Nature</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Gallery items will be loaded here by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+      <div class="container">
+        <div class="pricing-header" data-animate="fade-up">
+          <h2 class="section-title">Pricing Plans</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">
+            Choose the perfect package for your needs
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="pricing-card" data-animate="fade-up" data-delay="100">
+            <div class="pricing-badge">Basic</div>
+            <h3 class="pricing-title">Essential</h3>
+            <div class="pricing-price">
+              <span class="currency">$</span>
+              <span class="amount">299</span>
+            </div>
+            <ul class="pricing-features">
+              <li><span class="check">✓</span> 2 Hour Session</li>
+              <li><span class="check">✓</span> 30 Edited Photos</li>
+              <li><span class="check">✓</span> Online Gallery</li>
+              <li><span class="check">✓</span> Digital Download</li>
+              <li><span class="check">✓</span> Basic Retouching</li>
+            </ul>
+            <button class="pricing-btn">Get Started</button>
+          </div>
+
+          <div
+            class="pricing-card featured"
+            data-animate="fade-up"
+            data-delay="200"
+          >
+            <div class="pricing-badge popular">Most Popular</div>
+            <h3 class="pricing-title">Premium</h3>
+            <div class="pricing-price">
+              <span class="currency">$</span>
+              <span class="amount">599</span>
+            </div>
+            <ul class="pricing-features">
+              <li><span class="check">✓</span> 4 Hour Session</li>
+              <li><span class="check">✓</span> 60 Edited Photos</li>
+              <li><span class="check">✓</span> Online Gallery</li>
+              <li><span class="check">✓</span> Digital Download</li>
+              <li><span class="check">✓</span> Advanced Retouching</li>
+              <li><span class="check">✓</span> 2 Locations</li>
+              <li><span class="check">✓</span> Print Release</li>
+            </ul>
+            <button class="pricing-btn">Get Started</button>
+          </div>
+
+          <div class="pricing-card" data-animate="fade-up" data-delay="300">
+            <div class="pricing-badge">Deluxe</div>
+            <h3 class="pricing-title">Ultimate</h3>
+            <div class="pricing-price">
+              <span class="currency">$</span>
+              <span class="amount">999</span>
+            </div>
+            <ul class="pricing-features">
+              <li><span class="check">✓</span> Full Day Coverage</li>
+              <li><span class="check">✓</span> 100+ Edited Photos</li>
+              <li><span class="check">✓</span> Online Gallery</li>
+              <li><span class="check">✓</span> Digital Download</li>
+              <li><span class="check">✓</span> Premium Retouching</li>
+              <li><span class="check">✓</span> Multiple Locations</li>
+              <li><span class="check">✓</span> Print Release</li>
+              <li><span class="check">✓</span> Photo Album</li>
+            </ul>
+            <button class="pricing-btn">Get Started</button>
+          </div>
+
+          <div
+            class="pricing-card custom"
+            data-animate="fade-up"
+            data-delay="400"
+          >
+            <div class="pricing-badge">Custom</div>
+            <h3 class="pricing-title">Bespoke</h3>
+            <div class="pricing-price custom-price">
+              <span class="amount">Let's Talk</span>
+            </div>
+            <p class="custom-description">
+              Need something unique? I'd love to create a custom package
+              tailored specifically to your vision and requirements.
+            </p>
+            <ul class="pricing-features">
+              <li><span class="check">✓</span> Customized Services</li>
+              <li><span class="check">✓</span> Flexible Schedule</li>
+              <li><span class="check">✓</span> Unlimited Locations</li>
+              <li><span class="check">✓</span> Special Requests</li>
+            </ul>
+            <button class="pricing-btn">Contact Me</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-header" data-animate="fade-up">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">
+            Let's create something beautiful together
+          </p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-form-wrapper" data-animate="fade-up">
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="John Doe"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="john@example.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  required
+                  placeholder="Tell me about your project..."
+                ></textarea>
+              </div>
+              <button type="submit" class="submit-btn">
+                <span>Send Message</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path
+                    d="M2 10L18 2L10 18L8 12L2 10Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <p class="response-promise">I'll respond within 24 hours</p>
+            </form>
+          </div>
+
+          <div class="contact-info" data-animate="fade-up" data-delay="100">
+            <div class="contact-methods">
+              <h3>Quick Contact</h3>
+              <div class="contact-links">
+                <a
+                  href="https://wa.me/1234567890"
+                  class="contact-link whatsapp"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                    />
+                  </svg>
+                  <span>WhatsApp</span>
+                </a>
+                <a
+                  href="https://t.me/username"
+                  class="contact-link telegram"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
+                    />
+                  </svg>
+                  <span>Telegram</span>
+                </a>
+                <a
+                  href="mailto:hello@alexandramorgan.com"
+                  class="contact-link email"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                      stroke-width="2"
+                    />
+                    <path d="M22 6l-10 7L2 6" stroke-width="2" />
+                  </svg>
+                  <span>Email</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <h3>Follow Me</h3>
+              <div class="social-icons">
+                <a
+                  href="https://instagram.com/alexandramorgan"
+                  class="social-icon"
+                  data-social="instagram"
+                  aria-label="Visit our Instagram page"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://facebook.com/alexandramorgan"
+                  class="social-icon"
+                  data-social="facebook"
+                  aria-label="Visit our Facebook page"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://twitter.com/alexandramorgan"
+                  class="social-icon"
+                  data-social="twitter"
+                  aria-label="Visit our Twitter page"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://pinterest.com/alexandramorgan"
+                  class="social-icon"
+                  data-social="pinterest"
+                  aria-label="Visit our Pinterest page"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://linkedin.com/in/alexandramorgan"
+                  class="social-icon"
+                  data-social="linkedin"
+                  aria-label="Visit our LinkedIn page"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.4 8.17h4.2V24H.4zM8.34 8.17h4.02v2.16h.06c.56-1.06 1.93-2.18 3.97-2.18 4.25 0 5.03 2.8 5.03 6.45V24h-4.2v-7.6c0-1.81-.03-4.14-2.52-4.14-2.52 0-2.9 1.96-2.9 4v7.74H8.34z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/alexandramorgan"
+                  class="social-icon"
+                  data-social="github"
+                  aria-label="Visit our GitHub page"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 .5C5.648.5.5 5.648.5 12c0 5.092 3.292 9.398 7.868 10.915.575.105.785-.25.785-.556 0-.274-.01-1-.015-1.964-3.2.695-3.878-1.543-3.878-1.543-.523-1.328-1.277-1.682-1.277-1.682-1.044-.714.079-.699.079-.699 1.155.081 1.764 1.186 1.764 1.186 1.026 1.758 2.69 1.25 3.345.956.104-.743.402-1.25.73-1.538-2.553-.29-5.236-1.277-5.236-5.682 0-1.255.45-2.282 1.186-3.086-.119-.29-.515-1.457.112-3.038 0 0 .967-.31 3.17 1.18a11.07 11.07 0 0 1 2.886-.388c.979.004 1.964.132 2.886.388 2.2-1.49 3.165-1.18 3.165-1.18.63 1.58.234 2.748.115 3.038.74.804 1.185 1.831 1.185 3.086 0 4.417-2.69 5.387-5.253 5.672.41.353.774 1.047.774 2.11 0 1.523-.014 2.75-.014 3.122 0 .31.205.667.79.553C20.713 21.393 24 17.09 24 12 24 5.648 18.852.5 12 .5z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://youtube.com/@alexandramorgan"
+                  class="social-icon"
+                  data-social="youtube"
+                  aria-label="Visit our YouTube page"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M23.5 6.2s-.2-1.7-.8-2.4c-.7-.8-1.5-.8-1.9-.8C17.8 3 12 3 12 3h-.1S6.2 3 3.2 3c-.4 0-1.2 0-1.9.8C.7 4.5.5 6.2.5 6.2S.3 8 .3 9.8v1.4C.3 13 .5 14.8.5 14.8s.2 1.7.8 2.4c.7.8 1.6.8 2 .9 1.5.1 6.7.2 6.7.2s5.8 0 9.6-.2c.4 0 1.2 0 1.9-.8.6-.7.8-2.4.8-2.4s.2-1.8.2-3.6V9.8c0-1.8-.2-3.6-.2-3.6zM9.8 13.5V7.5l5.2 3-5.2 3z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://tiktok.com/@alexandramorgan"
+                  class="social-icon"
+                  data-social="tiktok"
+                  aria-label="Visit our TikTok page"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M21.5 8.3c-1.9 0-3.6-.6-4.9-1.8v7.2c0 3.7-3 6.8-6.8 6.8S3 17.4 3 13.7s3-6.8 6.8-6.8c.4 0 .9 0 1.3.1v3.1a3.7 3.7 0 0 0-1.3-.2 3.7 3.7 0 1 0 3.7 3.7V2h2.7c.1.6.4 1.2.8 1.8.6.8 1.6 1.5 2.8 1.6v2.9z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Alexandra Morgan Photography. All rights reserved.</p>
+        <p>Designed with passion for capturing beautiful moments</p>
+      </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" aria-label="Close lightbox">
+        &times;
+      </button>
+      <button class="lightbox-prev" aria-label="Previous image">‹</button>
+      <button class="lightbox-next" aria-label="Next image">›</button>
+      <div class="lightbox-content">
+        <img src="" alt="" id="lightboxImg" />
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+      </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

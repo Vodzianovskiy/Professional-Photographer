@@ -1,0 +1,60 @@
+:is(.gallery-item, .effect-demo).animated.effect-1 {
+  animation: fadeScale 0.6s ease forwards;
+}
+:is(.gallery-item, .effect-demo).animated.effect-2 {
+  animation: slideUp 0.6s ease forwards;
+}
+:is(.gallery-item, .effect-demo).animated.effect-3 {
+  animation: slideDown 0.6s ease forwards;
+}
+:is(.gallery-item, .effect-demo).animated.effect-4 {
+  animation: slideLeft 0.6s ease forwards;
+}
+:is(.gallery-item, .effect-demo).animated.effect-5 {
+  animation: slideRight 0.6s ease forwards;
+}
+:is(.gallery-item, .effect-demo).animated.effect-6 {
+  animation: zoomIn 0.6s ease forwards;
+}
+:is(.gallery-item, .effect-demo).animated.effect-7 {
+  animation: zoomOut 0.6s ease forwards;
+}
+:is(.gallery-item, .effect-demo).animated.effect-8 {
+  animation: rotateIn 0.8s ease forwards;
+}
+:is(.gallery-item, .effect-demo).animated.effect-9 {
+  animation: flip 0.8s ease forwards;
+}
+:is(.gallery-item, .effect-demo).animated.effect-10 {
+  animation: blurIn 0.8s ease forwards;
+}
+:is(.gallery-item, .effect-demo).animated.effect-11 {
+  animation: bounce 0.8s ease forwards;
+}
+:is(.gallery-item, .effect-demo).animated.effect-12 {
+  animation: elastic 0.8s ease forwards;
+}
+:is(.gallery-item, .effect-demo).animated.effect-13 {
+  animation: pulse 0.8s ease forwards;
+}
+:is(.gallery-item, .effect-demo).animated.effect-14 {
+  animation: wobble 0.8s ease forwards;
+}
+:is(.gallery-item, .effect-demo).animated.effect-15 {
+  animation: lightSpeed 0.8s ease forwards;
+}
+:is(.gallery-item, .effect-demo).animated.effect-16 {
+  animation: tada 0.8s ease forwards;
+}
+:is(.gallery-item, .effect-demo).animated.effect-17 {
+  animation: jello 0.8s ease forwards;
+}
+:is(.gallery-item, .effect-demo).animated.effect-18 {
+  animation: rollIn 0.8s ease forwards;
+}
+:is(.gallery-item, .effect-demo).animated.effect-19 {
+  animation: fadeLeft 0.6s ease forwards;
+}
+:is(.gallery-item, .effect-demo).animated.effect-20 {
+  animation: fadeRight 0.6s ease forwards;
+}

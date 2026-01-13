@@ -1,0 +1,31 @@
+/* Core */
+@import "core/variables.css";
+@import "core/reset.css";
+@import "core/typography.css";
+@import "core/utilities.css";
+
+/* Components */
+@import "components/header.css";
+@import "components/footer.css";
+@import "components/buttons.css";
+@import "components/cards.css";
+@import "components/forms.css";
+@import "components/modal.css";
+@import "components/loader.css";
+
+/* Sections */
+@import "sections/hero.css";
+@import "sections/about.css";
+@import "sections/gallery.css";
+@import "sections/pricing.css";
+@import "sections/contact.css";
+
+/* Animations */
+@import "animations/scroll-animations.css";
+@import "animations/gallery-effects.css";
+@import "animations/transitions.css";
+@import "animations/hover-effects.css";
+@import "animations/keyframes.css";
+
+/* Responsive */
+@import "responsive.css";
