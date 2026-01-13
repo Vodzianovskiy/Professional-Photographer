@@ -24,6 +24,9 @@
 }
 .form-group input,
 .form-group textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--glass-border);

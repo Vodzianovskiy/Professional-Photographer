@@ -35,6 +35,16 @@
 .action-btn {
   min-height: 44px;
 }
+.contact-form-wrapper {
+  width: 100%;
+  max-width: 100%;
+  padding: var(--spacing-md);
+  box-sizing: border-box;
+}
+.contact-form {
+  width: 100%;
+  max-width: 100%;
+}
 .admin-layout {
   grid-template-columns: 1fr;
 }
